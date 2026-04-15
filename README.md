@@ -103,5 +103,9 @@ Save and close the editor.
 A second editor will open for the new combined commit message. Write a clean one:textfeat: implement payment gateway with tests and docsSave and close. Your history is now clean (usually 1–2 commits instead of 5).
 (Optional but good) Force-push the cleaned branch if already pushed:git push origin feature/payment --force-with-lease
 
-
+# Merge vs Rebase:
+Merge creates a new merge commit that preserves the full history and branch structure. It's safer for shared branches (like develop → main). It shows when and how features were integrated.
+Rebase replays your commits on top of another branch, creating a linear history. Better for cleaning private feature branches before merging. It rewrites history, so avoid on shared branches.
+# Squash & Reword:
+Squash combines multiple small commits into one meaningful commit (keeps history clean).
 
